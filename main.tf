@@ -1,5 +1,6 @@
 provider "aws" {
   profile = "my_aws"
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "b" {
@@ -7,7 +8,7 @@ resource "aws_s3_bucket" "b" {
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "my_bucket"
     Environment = "Dev"
   }
 }
