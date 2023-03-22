@@ -1,9 +1,9 @@
-# terraform_lab
+
 Complete CI/CD Jenkins Terraform Automation | Writing IAC and Groovy Scripts
 
 add new github repository
 and add main.tf file
-Setup Jenkins
+Setup Jenkins , install Terraform, Install Amazon CLI, configure it( dont forget to set myawsprofile according to main.tf)
 Setup new project
 Setup Github webhook
 setup Groovy pipeline, write a declaritive pipeline script ,below is the script
