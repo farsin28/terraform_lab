@@ -1,10 +1,6 @@
-#provider "aws" {
-#  profile = "my_aws"
-#  region  = var.region
-
 provider "aws" {
   profile = "my_aws"
-  region  = "${var.region}"
+  region  = var.region
 }
 
 resource "aws_s3_bucket" "b" {
@@ -12,11 +8,8 @@ resource "aws_s3_bucket" "b" {
   acl    = "private"
 
   tags = {
-    Name        = "My_bucket"
+    Name        = "My bucket"
     Environment = "Dev"
   }
 }
 
-variable "region" {
-  
-}
