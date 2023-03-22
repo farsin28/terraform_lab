@@ -1,8 +1,11 @@
+#provider "aws" {
+#  profile = "my_aws"
+#  region  = var.region
+
 provider "aws" {
   profile = "my_aws"
-  region  = var.region
+  region  = "${var.region}"
 }
-
 
 resource "aws_s3_bucket" "b" {
   bucket = "myawsbucket98959895"
